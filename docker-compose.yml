@@ -12,6 +12,7 @@ services:
   prod1:
     build:
       context: prod1/   
+    volumes: 
       - type: volume
         source: builder1
         target: /usr/local/tomcat/webapps

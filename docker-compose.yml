@@ -14,4 +14,4 @@ services:
       context: prod1/   
 
 volumes: 
-  builder1
+  builder1:

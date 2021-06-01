@@ -1,0 +1,17 @@
+version: '3.2'
+
+services:
+  builder1:
+    build:
+      context: builder1/
+    volumes:
+      - type: volume  
+        source: builder1
+        target: /home/user/share 
+
+  prod1:
+    build:
+      context: prod1/   
+
+volumes: 
+  builder1

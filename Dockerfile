@@ -1,8 +1,15 @@
 FROM tomcat:latest
-RUN apt-get update && apt-get install -f \
+
+#  install packages
+RUN apt-get update && apt-get install -y \
 git \
-maven 
-WORKDIR /root/ 
+default-jdk \
+maven
+
+# get source code application from git 
+WORKDIR /root/
 RUN git clone https://github.com/tarekkhoury/mywebapplication.git
-WORKDIR /root/mywebapplication/
-RUN mvn package
+
+# make package
+RUN mvn -f /root/mywebapplication/pom.xml clean package
+RUN cp /root/mywebapplication/target/mywebapplication.war    /usr/local/tomcat/webapps/mywebapplication.war

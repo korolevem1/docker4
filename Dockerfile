@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM tomcat:latest
 RUN apt-get update && apt-get install -f \
 git \
 maven 

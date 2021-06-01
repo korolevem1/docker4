@@ -12,4 +12,5 @@ RUN git clone https://github.com/tarekkhoury/mywebapplication.git
 
 # make package
 RUN mvn -f /root/mywebapplication/pom.xml clean package
-RUN cp /root/mywebapplication/target/mywebapplication.war    /usr/local/tomcat/webapps/mywebapplication.war
+RUN make -p /home/user/share
+RUN cp /root/mywebapplication/target/mywebapplication.war    /home/user/share/mywebapplication.war

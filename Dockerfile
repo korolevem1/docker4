@@ -1,6 +1,6 @@
 FROM ubuntu:latest
-RUN apt update
-RUN apt install -f \
+RUN ap-get update
+RUN apt-get install -f \
 git \
 maven 
 WORKDIR /root/ 

@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-RUN ap-get update
+RUN apt-get update
 RUN apt-get install -f \
 git \
 maven 

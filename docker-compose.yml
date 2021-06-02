@@ -1,3 +1,4 @@
+#http://ip/mywebapplication
 version: '3.2'
 
 services:

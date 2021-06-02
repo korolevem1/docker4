@@ -1,2 +1,1 @@
-01.06.2021 16:55  need make 1 - start tomcat  after tomcat builder 2 -make share folder fow war 3 - optimize tomcat may be install ubbunut + tomcat from source code and may be default-jdk
-01.06.2021 16.55 use for sample https://github.com/deviantony/docker-elks
+for acces use http://ip/mywebapplication

@@ -18,6 +18,6 @@ services:
     ports: 
       - "80:8080"
     depends_on: 
-    - builder1
-    volumes: 
+      - builder1
+volumes: 
   builder1:

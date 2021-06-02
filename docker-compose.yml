@@ -10,11 +10,14 @@ services:
         target: /home/user/share 
 
   prod1:
-    build:
-      context: prod1/   
+    image: tomcat:latest
     volumes: 
       - type: volume
         source: builder1
         target: /usr/local/tomcat/webapps
-volumes: 
+    ports: 
+      - "80:8080"
+    depends_on: 
+    - builder1
+    volumes: 
   builder1:

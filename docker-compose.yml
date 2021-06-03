@@ -11,7 +11,8 @@ services:
         target: /home/user/share 
 
   prod1:
-    image: tomcat:latest
+    build:
+      context: prod1/
     volumes: 
       - type: volume
         source: builder1

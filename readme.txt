@@ -1,1 +1,1 @@
-for acces use http://ip/mywebapplication
+for access use http://ip/mywebapplication
